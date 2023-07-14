@@ -161,6 +161,38 @@ h1{
     box-shadow: 0 0 35px var(--main-color);
     transform: scale(1);
 }
+/* SERVICES-SECTION */
+.sections-services{
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    
+    
+    
+}
+.services-description{
+    width: 60rem;
+    margin: 10rem auto;
+}
+.services-listing{
+    display: flex;
+    width: 90rem;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10rem;
+    position: relative;
+    
+}
+/* .service-1:hover{
+    background-color: var(--color-grey);
+} */
+.service-1 img{
+    width: 77px;
+    height: 87px;
+    
+}
+
 label #btn, label #cancel{
     color: white;
     font-size: 30px;
@@ -173,6 +205,7 @@ label #btn, label #cancel{
 #check{
     display: none;
 }
+
 @media (max-width: 1100px){
     .hero{
         padding: 2rem 2rem;
@@ -193,11 +226,12 @@ label #btn, label #cancel{
         display: none;
     } */
 
-    .logo-container{
+    .logo-container label{
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
+        
     }
     label #btn{
         display: block;
@@ -225,14 +259,35 @@ label #btn, label #cancel{
     }
     #check:checked ~ ul{
         left: 0;
-        
     }
     #check:checked ~ label #btn{
         display: none;
-        
     }
     #check:checked ~ label #cancel{
         display: block;
     }
+    .sections-services{
+        width: 80%;
+        margin: 0 auto;
+    }
     
-}
+    .services-description{
+        width: 100%;
+        margin: 5rem auto;
+        padding: 0 2rem;
+    }
+    .services-listing {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10rem;
+        position: relative;
+    }
+    .service-1{
+        width: 25%;
+        margin: 0 auto;
+    }
+} 

@@ -19,16 +19,12 @@
   
 *, *:before, *:after {
     box-sizing: border-box;
-}
-      
+}     
 
 html {
     scroll-behavior: smooth;
     font-size: 62.5%;
 }
-
-
-
 
 /* Variables
    ============================= */
@@ -61,7 +57,6 @@ html {
 } 
 
 body {
-    
     width: 100%;
     color: var(--color-headlines-and-body);
     font-family: var(--font-family-base);
@@ -81,9 +76,6 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    margin: 0 auto;
-
 
 }
 ul{
@@ -120,6 +112,8 @@ a:hover:after{
     width: 100%;
     
 }
+
+/* HERO CONTENT */
 
 .hero{
     background: url(./images/headphones_hero_1.jpg), lightgray 0px 0px / 100% 100% no-repeat;
@@ -161,78 +155,130 @@ h1{
     box-shadow: 0 0 35px var(--main-color);
     transform: scale(1);
 }
-label #btn, label #cancel{
-    color: white;
-    font-size: 30px;
-    float: right;
-    /* line-height: 80px; */
+/* SERVICES-SECTION */
+.sections-services{
+    text-align: center;
+    width: 100%;
+    height: 100vh;
     
-    cursor: pointer;
-    display: none;
+    
+    
 }
-#check{
-    display: none;
+.services-description{
+    width: 60rem;
+    margin: 10rem auto;
 }
-@media (max-width: 1100px){
-    .hero{
-        padding: 2rem 2rem;
-    }
+.services-listing{
+    display: flex;
+    width: 90rem;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10rem;
+    position: relative;
+    
+}
+/* .service-1:hover{
+    background-color: var(--color-grey);
+} */
+.service-1 img{
+    width: 77px;
+    height: 87px;
     
 }
 
-@media (max-width: 480px) {
-    
-    .hero{
-        padding: 2rem 2rem;
-    }
-    .hero-content{
-        width: 100%;
-        margin: 10rem auto;
-    }
-    /* .nav-links{
-        display: none;
-    } */
 
-    .logo-container{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
-    label #btn{
-        display: block;
-    }
-    h1{
-        font-size: 24px;
-    }
-    ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #071629;
-        top: 80px;
-        left: 0;
-        text-align: center;
-        display: block;
-        transition: all .5s;
-    }
-    ul li{
-        margin: 50px 0;
-        line-height: 30px;
-    }
-    ul li a{
-        font-size: 20px;
-    }
-    #check:checked ~ ul{
-        left: 0;
-        
-    }
-    #check:checked ~ label #btn{
-        display: none;
-        
-    }
-    #check:checked ~ label #cancel{
-        display: block;
-    }
+/* OUR RESULT SECTION */
+#our-result{
+    background: url(./images/headphones_hero_2.jpg), lightgray 0px 0px / 100% 100% no-repeat;
+    color: var(--color-white);
+    padding: 5rem 0;
+}
+
+.pentagon-container{
+    display: flex;
+    width: 90rem;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
     
+    
+}
+.result h2 {
+    color: var(--color-white);
+}
+.pent-container{
+    position: relative;
+    margin: 0 4rem;
+}
+
+.pentagon{
+    width: 11.8rem;
+    height: 11.8rem;
+
+}
+.short-text{
+    position: absolute;
+    top: 22%;
+    left: 20%;
+}
+.short-text p{
+    font-size: 0.95rem;
+    margin: -2px;
+}
+span{
+    font-weight: 700;
+    font-size: 2.9rem;
+}
+
+/* CONTACT_US SECTION */
+.contact{
+    width: 30rem;
+    height: 23.3125rem;
+    margin: 5rem auto;
+    
+}
+
+
+.contact label input{
+    display: block;
+    margin: 0.5rem 0;
+    width: 100%;
+    border: none;
+    border-top: 0.1rem solid var(--color-grey);
+}
+textarea{
+    width: 100%;
+    margin: 2rem 0;
+    border: none;
+    border-top: 0.1rem solid var(--color-grey);
+
+}
+.btn-container{
+    width: 100%;
+}
+#btn{
+    margin: 0 26%;
+}
+
+/* FOOTER SECTION */
+footer{
+    width: 100%;
+    background-color: #071629;
+    margin-top: 20rem;
+    height: 16rem;
+    padding: 5rem;
+}
+.logo-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90rem;
+    margin: 0 auto;
+}
+.copyright{
+    color: var(--color-white);
+    font-size: 0.9rem;
+    margin: 5rem 47%;
+    opacity: 0.36px;
 }
